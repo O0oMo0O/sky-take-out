@@ -78,6 +78,7 @@ public class EmployeeController {
     @ApiOperation("新增员工")
     public void save(EmployeeLoginDTO employeeLoginDTO){
     log.info("新增员工：{}",employeeLoginDTO);
+
     employeeService.save(employeeLoginDTO);
     }
 }
